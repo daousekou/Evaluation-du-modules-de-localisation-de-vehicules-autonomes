@@ -1,9 +1,21 @@
 # Évaluation de modules de localisation pour véhicule autonome (ROS 2 / CARLA)
 
+Dans le cadre du développement d’un jumeau numérique autour d’un véhicule Renault Zoé
+robotisé et d’un environnement simulé, la plateforme PRETIL et l’équipe ToSyMA explorent
+l’intégration de briques logicielles de localisation basées sur la fusion de plusieurs capteurs.
+L’objectif du projet est de mettre en place, tester et évaluer différents modules de localisation
+multi-capteurs appliqués à la mobilité autonome, en s’appuyant sur :
+· des capteurs embarqués réels (caméra Intel Realsense D435i, récepteur GNSS, centrale
+inertielle SBG Ellipse-E, Lidar Hesai Pandar XT-32, encodeurs de roues, vitesse et angle
+de direction),
+· et leur équivalent simulé dans l’environnement CARLA/ROS.
+Le projet vise à analyser la précision, la robustesse et les limites de différentes approches de
+fusion multi-capteurs proposés par Autoware et des dépôts open-source sur la plateforme Zoé
+robotisée et dans son jumeau numérique sous CARLA
+
 Ce dépôt contient **le rapport de projet** : *Évaluation de modules de localisation pour véhicule autonome — ROS 2 & CARLA : robot_localization (EKF/UKF)*.  
 Le travail met en place un protocole d’évaluation pour comparer des configurations de **fusion multi-capteurs** (odométrie, IMU, GNSS) avec le package **`robot_localization`** (filtres **EKF** et **UKF**) dans **CARLA**, en comparant l’estimation à la **vérité terrain** (ground truth).
 
-> 📦 Contenu du dépôt : uniquement ce `README.md` + le PDF du rapport.
 
 ---
 
@@ -90,15 +102,8 @@ Encadrement :
 
 ---
 
-## Citation
 
-Si vous réutilisez ce travail (rapport, figures, résultats), merci de citer :
-
-> DAOU S., OUEDRAOGO T., *Évaluation de modules de localisation pour véhicule autonome — ROS 2 & CARLA : robot_localization (EKF/UKF)*, Université de Lille.
 
 ---
 
-## Licence
 
-À définir par l’auteur (ex. MIT / Apache-2.0).  
-Par défaut, **tous droits réservés** tant qu’aucune licence n’est ajoutée.
